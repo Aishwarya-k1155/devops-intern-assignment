@@ -7,16 +7,15 @@ This repository contains my work for the DevOps Intern Assignment, where I deplo
 The goal of this assignment was to launch an EC2 instance, configure a web server, generate periodic system reports using a Bash script, automate the script using cron, and send the logs to AWS CloudWatch for centralized monitoring.
 
 # Tasks Completed
-# 1. EC2 Setup
+## 1. EC2 Setup
 
-Launched an Ubuntu EC2 instance in us-east-1 (N. Virginia).
+### Launched an Ubuntu EC2 instance in us-east-1 (N. Virginia).
 
-Connected to the instance using SSH.
+### Connected to the instance using SSH.
 
-Installed and configured Nginx.
+### Installed and configured Nginx.
 
-Created a custom index.html displaying:
-
+### Created a custom index.html displaying:
 My name
 
 Instance ID
@@ -30,19 +29,19 @@ Created a Bash script at:
 /usr/local/bin/system_report.sh
 
 
-This script collects:
+## This script collects:
 
-Current date and time
+### Current date and time
 
-System uptime
+### System uptime
 
-CPU usage
+### CPU usage
 
-Memory usage
+### Memory usage
 
-Disk usage
+### Disk usage
 
-Top 3 CPU-consuming processes
+### Top 3 CPU-consuming processes
 
 The script outputs everything to:
 
@@ -59,17 +58,17 @@ This ensures reports are generated automatically without manual execution.
 
 # 4. CloudWatch Integration
 
-Configured AWS CLI using a dedicated IAM user.
+### Configured AWS CLI using a dedicated IAM user.
 
-Created a CloudWatch log group:
+### Created a CloudWatch log group:
 /devops/intern-metrics
 
-Created a log stream:
+### Created a log stream:
 system-report-stream
 
-Generated a valid JSON log events file.
+### Generated a valid JSON log events file.
 
-Uploaded logs using:
+### Uploaded logs using:
 
 aws logs put-log-events \
   --log-group-name "/devops/intern-metrics" \
