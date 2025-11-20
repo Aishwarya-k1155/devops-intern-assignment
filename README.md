@@ -1,13 +1,13 @@
-DevOps Intern Assignment
+# DevOps Intern Assignment
 
 This repository contains my work for the DevOps Intern Assignment, where I deployed a monitoring setup on an EC2 instance, automated system reporting, and integrated the logs with AWS CloudWatch.
 
-Project Overview
+# Project Overview
 
 The goal of this assignment was to launch an EC2 instance, configure a web server, generate periodic system reports using a Bash script, automate the script using cron, and send the logs to AWS CloudWatch for centralized monitoring.
 
-Tasks Completed
-1. EC2 Setup
+# Tasks Completed
+# 1. EC2 Setup
 
 Launched an Ubuntu EC2 instance in us-east-1 (N. Virginia).
 
@@ -23,7 +23,7 @@ Instance ID
 
 Server uptime
 
-2. System Monitoring Script
+# 2. System Monitoring Script
 
 Created a Bash script at:
 
@@ -48,7 +48,7 @@ The script outputs everything to:
 
 /var/log/system_report.log
 
-3. Cron Automation
+# 3. Cron Automation
 
 Configured a cron job that runs the monitoring script every 5 minutes:
 
@@ -57,7 +57,7 @@ Configured a cron job that runs the monitoring script every 5 minutes:
 
 This ensures reports are generated automatically without manual execution.
 
-4. CloudWatch Integration
+# 4. CloudWatch Integration
 
 Configured AWS CLI using a dedicated IAM user.
 
@@ -80,22 +80,22 @@ aws logs put-log-events \
 
 Logs successfully appeared in CloudWatch.
 
-Technologies Used
+# Technologies Used
 
-AWS EC2
+### AWS EC2
 
-AWS CloudWatch
+### AWS CloudWatch
 
-IAM
+### IAM
 
-AWS CLI
+### AWS CLI
 
-Bash scripting
+### Bash scripting
 
-Cron
+### Cron
 
-Nginx
+### Nginx
 
-Conclusion
+# Conclusion
 
 This assignment helped me gain hands-on experience with EC2 setup, Linux automation, AWS CLI usage, CloudWatch log management, and creating automated monitoring solutions.
